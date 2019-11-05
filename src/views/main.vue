@@ -1,17 +1,19 @@
 <template>
     <div>
-        <fk-footer></fk-footer>
+
         <router-view></router-view>
+        <vfooter></vfooter>
 
     </div>
 </template>
 
 <script>
-    import  footer from "./footer"
+
+    import vfooter from "../components/footer"
     export default {
         name: "Vmain",
         components:{
-            fkFooter:footer
+           vfooter
         }
     }
 </script>
