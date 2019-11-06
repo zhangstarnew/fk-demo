@@ -7,6 +7,8 @@ import my from '../views/tabs/my'
 import main from '../views/main'
 import VueRouter from 'vue-router'
 
+
+
 Vue.use(VueRouter)
 
 let router = new VueRouter({
@@ -25,7 +27,7 @@ let router = new VueRouter({
         },
         {
           path: 'classify',
-          component: classify
+          component: classify,
         },
         {
           path: 'channel',

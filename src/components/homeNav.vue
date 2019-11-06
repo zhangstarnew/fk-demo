@@ -16,23 +16,23 @@
                 homenav:[
                     {
                         word:"新品",
-                        list:require("../assets/images/homeNav1.jpg")
+                        list:"./img/homeNav1.jpg"
                     },
                     {
                         word:"特惠",
-                        list:require("../assets/images/homeNav2.jpg")
+                        list:"./img/homeNav2.jpg"
                     },
                     {
                         word:"衬衫",
-                        list:require("../assets/images/homeNav3.jpg")
+                        list:"./img/homeNav3.jpg"
                     },
                     {
                         word:"外套",
-                        list:require("../assets/images/homeNav4.jpg")
+                        list:"./img/homeNav4.jpg"
                     },
                     {
                         word:"获奖名单",
-                        list:require("../assets/images/homeNav5.jpg")
+                        list:"./img/homeNav5.jpg"
                     },
                 ]
             }

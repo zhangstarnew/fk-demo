@@ -4,7 +4,7 @@
       <banner></banner>
       <home-nav></home-nav>
       <home-product></home-product>
-<!--      <home-seckill></home-seckill>-->
+      <home-seckill></home-seckill>
 
    </div>
 
@@ -15,7 +15,7 @@
     import banner from "../../components/banner";
     import homeNav from "../../components/homeNav";
     import homeProduct from "../../components/homeProduct";
-   // import homeSeckill from "../../components/homeSeckill";
+   import homeSeckill from "../../components/homeSeckill";
     export default {
         name: "home",
         components:{
@@ -23,7 +23,7 @@
            banner,
            homeNav,
            homeProduct,
-         //  homeSeckill
+           homeSeckill
 
 
         }

@@ -16,13 +16,13 @@
         data(){
             return {
                 banner:[
-                    require("../assets/images/banner(1).jpg"),
-                    require("../assets/images/banner(2).jpg"),
-                    require("../assets/images/banner(3).jpg"),
-                    require("../assets/images/banner(4).jpg"),
-                    require("../assets/images/banner(5).jpg"),
-                    require("../assets/images/banner(6).jpg"),
-                    require("../assets/images/banner(7).jpg")
+                    "./img/banner(1).jpg",
+                    "./img/banner(2).jpg",
+                    "./img/banner(3).jpg",
+                    "./img/banner(4).jpg",
+                    "./img/banner(5).jpg",
+                    "./img/banner(6).jpg",
+                    "./img/banner(7).jpg",
                 ]
             }
         },
