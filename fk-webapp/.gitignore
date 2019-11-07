@@ -1,6 +1,5 @@
 .DS_Store
-jd-webapp/node_modules
-jd-webapp-api/node_modules
+node_modules
 /dist
 
 # local env files
