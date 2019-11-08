@@ -2,7 +2,6 @@
     <div class="homeproduct-box">
         <h3 class="homeproduct-box-h3"><span class="homeproduct-box-span1"></span><span class="homeproduct-box-span2">新品上新</span></h3>
 
-
         <div class="swiper-container swiper-product">
             <div class="swiper-wrapper ">
                 <div class="swiper-slide" v-for="(u,index) in homeProduct" :key="index"><a href="#"><img :src="u" alt=""></a></div>
@@ -35,8 +34,7 @@
         mounted(){
             new Swiper ('.swiper-product', {
                 slidesPerView: 2.3,
-                spaceBetween: 6,
-
+                spaceBetween: 6
             })
         }
     }

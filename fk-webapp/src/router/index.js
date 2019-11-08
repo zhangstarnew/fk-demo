@@ -9,6 +9,7 @@ import VueRouter from 'vue-router'
 
 
 
+
 Vue.use(VueRouter)
 
 let router = new VueRouter({
@@ -23,11 +24,11 @@ let router = new VueRouter({
       children: [
         {
           path: '',
-          component: home
+          component: home,
         },
         {
           path: 'classify',
-          component: classify,
+          component: classify
         },
         {
           path: 'channel',

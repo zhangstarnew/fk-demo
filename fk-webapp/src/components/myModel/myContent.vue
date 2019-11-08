@@ -59,7 +59,7 @@
         background-image: url("../../assets/images/uc-section-icon.png");
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: 0px -34px;
+        background-position: 0rem -0.34rem;
         margin-bottom: 0.01rem;
     }
     .myContent-ul-span3{
@@ -69,7 +69,7 @@
         background-image: url("../../assets/images/uc-section-icon.png");
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: 0px -396px;
+        background-position: 0rem -3.96rem;
         margin-bottom: 0.01rem;
     }
     .myContent-ul-span4{
@@ -79,7 +79,7 @@
         background-image: url("../../assets/images/uc-section-icon.png");
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: 0px -428px;
+        background-position: 0rem -4.28rem;
         margin-bottom: 0.01rem;
     }
     .myContent-ul-span5{
@@ -89,7 +89,7 @@
         background-image: url("../../assets/images/uc-section-icon.png");
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: 0px -132px;
+        background-position: 0rem -1.32rem;
         margin-bottom: 0.01rem;
     }
     .myContent-ul-span6{
@@ -99,7 +99,7 @@
         background-image: url("../../assets/images/uc-section-icon.png");
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: 0px -66px;
+        background-position: 0rem -0.66rem;
         margin-bottom: 0.01rem;
     }
     .myContent-ul-span7{
@@ -109,7 +109,7 @@
           background-image: url("../../assets/images/uc-section-icon.png");
           background-repeat: no-repeat;
           background-size: 100%;
-          background-position: 0px -100px;
+          background-position: 0rem -1rem;
           margin-bottom: 0.01rem;
       }
     .myContent-ul-span8{
@@ -119,7 +119,7 @@
         background-image: url("../../assets/images/uc-section-icon.png");
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: 0px -231px;
+        background-position: 0rem -2.31rem;
         margin-bottom: 0.01rem;
     }
     .myContent-ul-span9{
@@ -139,7 +139,7 @@
         background-image: url("../../assets/images/uc-section-icon.png");
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: 0px -198px;
+        background-position: 0rem -1.98rem;
         margin-bottom: 0.01rem;
     }
     .myContent-ul-span11{
@@ -149,7 +149,7 @@
         background-image: url("../../assets/images/uc-section-icon.png");
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: 0px -264px;
+        background-position: 0rem -2.64rem;
         margin-bottom: 0.01rem;
     }
 

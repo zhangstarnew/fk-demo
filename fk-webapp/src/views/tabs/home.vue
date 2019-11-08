@@ -6,6 +6,7 @@
       <home-product></home-product>
       <home-seckill></home-seckill>
 
+
    </div>
 
 </template>
