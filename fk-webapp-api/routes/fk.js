@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+//引入module下面js文件
 const shopsModel = require("../module/model01");
 //允许跨域设置
 
@@ -12,6 +13,7 @@ router.all("*",(req,res,next)=>{
     else next();
 });
 
+//配置路由
 router.get("/",(req,res)=>{
     res.json(shopsModel.getdata())
     //{orders:orderarr}  绑定到order.ejs模板上
