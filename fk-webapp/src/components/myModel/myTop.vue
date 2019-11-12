@@ -3,7 +3,7 @@
         <a href="#" class="myTop-box-a"></a>
         <div class="myTop-box1">
             <img src="../../assets/images/H5-V0.jpg" class="myTop-box1-img">
-            <p class="myTop-box1-p">13649208218</p>
+            <p class="myTop-box1-p">{{phoneNumber}}</p>
             <a href="#"><img src="../../assets/images/H5-NewV0.png" class="myTop-box1-vip"></a>
         </div>
         <ul class="myTop-box-ul">
@@ -16,7 +16,12 @@
 
 <script>
     export default {
-        name: "myTop"
+        name: "myTop",
+        data(){
+            return {
+                phoneNumber:localStorage.getItem("token")
+            }
+        }
     }
 </script>
 

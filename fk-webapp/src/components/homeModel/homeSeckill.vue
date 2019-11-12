@@ -19,7 +19,7 @@
         name: "homeSeckill",
         data(){
             return {
-                homeSeckill:[
+                "homeSeckill":[
                     {
                         afterword:"充值后￥69",
                         beforeword:"￥198",
@@ -61,7 +61,8 @@
                         beforeword:"￥118",
                         list:"./img/seckill7.jpg"
 
-                    }, {
+                    },
+                    {
                         afterword:"充值后￥44",
                         beforeword:"￥98",
                         list:"./img/seckill8.jpg"
@@ -73,7 +74,7 @@
                         list:"./img/seckill9.jpg"
 
                     }
-                ]
+                ],
             }
         },
         mounted(){

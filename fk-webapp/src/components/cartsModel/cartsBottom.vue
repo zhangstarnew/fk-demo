@@ -1,9 +1,9 @@
 <template>
     <div>
         <div class="cartsBottom-login">
-            <a href="#" class="cartsBottom-login-a1"><span class="cartsBottom-login-span1">136****</span></a>
+            <a href="#" class="cartsBottom-login-a1"><span class="cartsBottom-login-span1" >{{phoneNumber}}</span></a>
             <span class="cartsBottom-login-span2">|</span>
-            <a href="#" class="cartsBottom-login-a2">退出</a>
+            <a href="#" class="cartsBottom-login-a2" @click.prevent="clear">退出</a>
         </div>
         <div class="cartsBottom-footer">
             <ul>
@@ -19,7 +19,19 @@
 
 <script>
     export default {
-        name: "cartsBottom"
+        name: "cartsBottom",
+        data(){
+            return {
+                phoneNumber:localStorage.getItem("token")
+            }
+        },
+        methods:{
+            clear(){
+                localStorage.clear()
+                this.$router.push("/main/login")
+            }
+        }
+
     }
 </script>
 

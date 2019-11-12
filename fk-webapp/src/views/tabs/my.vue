@@ -1,6 +1,6 @@
 <template>
     <div class="my-bg">
-        <my-header></my-header>
+        <vheader :data="data.vheader.name4" v-if="data.vheader"></vheader>
         <my-top></my-top>
         <my-matter></my-matter>
         <my-content></my-content>
@@ -8,17 +8,33 @@
 </template>
 
 <script>
-    import myHeader from "../../components/myModel/myHeader";
+    import vheader from "../../components/vheader";
     import myTop from "../../components/myModel/myTop";
     import myMatter from "../../components/myModel/myMatter";
     import myContent from "../../components/myModel/myContent";
+    import api from "../../apis/api";
     export default {
         name: "my",
         components:{
-            myHeader,
             myTop,
             myMatter,
-            myContent
+            myContent,
+            vheader
+        },
+        methods:{
+            async _initGoodsData() {
+                let data = await api.getgoodsData()
+                //console.log(data);
+                this.data=data
+            }
+        },
+        beforeMount () {
+            this._initGoodsData()
+        },
+        data(){
+            return{
+                data:[]
+            }
         }
     }
 </script>

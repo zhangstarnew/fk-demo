@@ -2,11 +2,8 @@
     <div class="V-footer">
         <div class="v-footer-box">
             <a :href="u.url" v-for="(u,index) in vfooter" :key="index" class="v-footer-box-a"><img :src="markPoint==index ? u.afterimg : u.beforeimg" @click="update(index)" class="v-footer-box-a-img"><br><span :class="markPoint==index ? 'v-footer-box-a-span2' : 'v-footer-box-a-span1'">{{u.word}}</span></a>
-
             <span class="v-footer-box-a-sum">0</span>
         </div>
-
-
 
     </div>
 </template>
@@ -14,11 +11,12 @@
 <script>
     export default {
         name: "vfooter",
+
         data(){
             return {
                 vfooter:[
                     {
-                       word:"凡客",
+                        word:"凡客",
                         beforeimg:"./img/f1.png",
                         afterimg:"./img/f2.png",
                         url:"#/"

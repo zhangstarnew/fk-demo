@@ -1,24 +1,31 @@
 <template>
-    <div class="c-header">
-        <a href="#"><span class="c-header-span1"></span></a>
-        <span class="c-header-span2">频道</span>
+    <div class="v-header">
+        <a href="#" @click.prevent="back"><span class="v-header-span1"></span></a>
+        <span class="v-header-span2">{{data}}</span>
     </div>
 </template>
 
 <script>
     export default {
-        name: "cartsHeader"
+        name: "vheader",
+        props:["data"],
+        methods:{
+            back(){
+                this.$router.go(-1)
+            }
+        }
+
     }
 </script>
 
 <style scoped>
-    .c-header{
+    .v-header{
         width: 3.75rem;
         height: 0.45rem;
         background-color:rgb(184,28,34);
         position: relative;
     }
-    .c-header-span1{
+    .v-header-span1{
         position: absolute;
         top: 0.22rem;
         left: 0.26rem;
@@ -30,7 +37,7 @@
         border-left: 0.02rem solid white;
         cursor: pointer;
     }
-    .c-header-span2{
+    .v-header-span2{
         font-size: 0.18rem;
         color: white;
         position: absolute;

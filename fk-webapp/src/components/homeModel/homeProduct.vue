@@ -15,8 +15,8 @@
     export default {
         name: "homeProduct",
         data(){
-            return{
-                homeProduct: [
+            return {
+                "homeProduct": [
                     "./img/product1.jpg",
                     "./img/product2.jpg",
                     "./img/product3.jpg",
@@ -28,7 +28,7 @@
                     "./img/product9.jpg",
                     "./img/product10.jpg",
                     "./img/product11.jpg"
-                ]
+                ],
             }
         },
         mounted(){

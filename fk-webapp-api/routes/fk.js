@@ -1,7 +1,11 @@
 const express = require("express");
 const router = express.Router();
 //引入module下面js文件
-const shopsModel = require("../module/model01");
+const homeModel = require("../module/model01");
+const classifyModel = require("../module/model02");
+const channelModel = require("../module/model03");
+const goodsModel = require("../module/goodscontent");
+
 //允许跨域设置
 
 router.all("*",(req,res,next)=>{
@@ -15,9 +19,24 @@ router.all("*",(req,res,next)=>{
 
 //配置路由
 router.get("/",(req,res)=>{
-    res.json(shopsModel.getdata())
+    res.json(homeModel.getdata())
     //{orders:orderarr}  绑定到order.ejs模板上
-})
+});
+router.get("/classify",(req,res)=>{
+    res.json(classifyModel.getdata())
+});
+router.get("/channel",(req,res)=>{
+    res.json(channelModel.getdata())
+});
+router.get("/goods",(req,res)=>{
+    res.json(goodsModel.getdata())
+});
 
+router.get("/carts",(req,res)=>{
+    res.json(goodsModel.getdata())
+});
+router.get("/my",(req,res)=>{
+    res.json(goodsModel.getdata())
+});
 
 module.exports = router;

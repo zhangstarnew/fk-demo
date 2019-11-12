@@ -1,24 +1,45 @@
 <template>
     <div>
-        <carts-header></carts-header>
+    <div v-if="msg">
+        <vheader :data="data.vheader.name3" v-if="data.vheader"></vheader>
         <carts-content></carts-content>
         <carts-bottom></carts-bottom>
     </div>
-
+    <div v-else>
+        <login></login>
+    </div>
+    </div>
 </template>
 
 <script>
-    import cartsHeader from "../../components/cartsModel/cartsHeader";
+    import vheader from "../../components/vheader";
     import cartsContent from "../../components/cartsModel/cartsContent";
     import cartsBottom from "../../components/cartsModel/cartsBottom";
+    import login from "../../components/login/login";
+    import api from "../../apis/api";
     export default {
         name: "carts",
         components:{
-            cartsHeader,
             cartsContent,
-            cartsBottom
-
-        }
+            cartsBottom,
+            login,
+            vheader
+        },
+        methods:{
+            async _initGoodsData() {
+                let data = await api.getgoodsData()
+                this.data=data
+            }
+        },
+        beforeMount () {
+            this._initGoodsData()
+        },
+        data(){
+            return {
+                msg:localStorage.getItem("token"),
+                data:[]
+            }
+        },
     }
 </script>
 

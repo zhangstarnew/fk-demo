@@ -1,21 +1,36 @@
 <template>
    <div class="classify-bg">
-      <classify-header></classify-header>
-         <classify-nav ></classify-nav>
+
+         <vheader :data="data.vheader.name1" v-if="data.vheader" ></vheader>
+         <classify-nav :data="data"></classify-nav>
+
 
    </div>
 </template>
 
 <script>
-   import classifyHeader from "../../components/classifyModel/classifyHeader";
+   import vheader from "../../components/vheader";
    import classifyNav from "../../components/classifyModel/classifyNav";
-
+    import api from "../../apis/api";
     export default {
         name: "classify",
        components:{
-          classifyHeader,
-          classifyNav,
-
+           vheader,
+           classifyNav
+       },
+       methods:{
+          async _initclassifyData() {
+             let data = await api.getclassifyData()
+             this.data=data
+          }
+       },
+       beforeMount () {
+          this._initclassifyData()
+       },
+       data(){
+          return{
+             data:[]
+          }
        }
     }
 </script>
