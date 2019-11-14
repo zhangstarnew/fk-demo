@@ -2,14 +2,12 @@
     <div class="homeseckill-box">
         <h3 class="homeseckill-box-h3"><span class="homeseckill-box-span1"></span><span class="homeseckill-box-span2">每日秒杀</span><span class="homeseckill-box-span3">|</span><span class="homeseckill-box-span4">15点场</span></h3>
 
-        <div class="swiper-container swiper-seckill">
+        <div class="swiper-container" id="swiper-seckill">
             <div class="swiper-wrapper ">
                 <div class="swiper-slide" v-for="(u,index) in homeSeckill" :key="index"><a href="#"><img :src="u.list"><br><span class="swiper-slide-span1">{{u.afterword}}</span><span class="swiper-slide-span2">{{u.beforeword}}</span></a></div>
                 <a href="#" class="swiper-slide-gd">查看更多∨</a>
             </div>
         </div>
-
-
     </div>
 </template>
 
@@ -78,7 +76,7 @@
             }
         },
         mounted(){
-            new Swiper ('.swiper-seckill', {
+            new Swiper ('#swiper-seckill', {
                 slidesPerView: 3.6,
             })
         }
